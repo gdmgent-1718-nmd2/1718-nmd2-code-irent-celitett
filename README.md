@@ -16,7 +16,7 @@ PS> git submodule foreach 'git checkout v4-dev'
 
 
 ```
-PS> c «mapnaam»
+PS> c 1718-nmd2-code-irent-celitett
 PS> bundle update
 PS> bundle exec jekyll serve
 ```

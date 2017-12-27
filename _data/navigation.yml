@@ -1,0 +1,14 @@
+- title: Home
+  url: /index.html
+- title: Info
+  url: /Info.html
+- title: Tijdlijn
+  url: /Tijdlijn.html
+- title: <img class="Logo mhide" src="assets/images/Logo.png">
+  url: /Logo
+- title: Tour
+  url: /Tour.html
+- title: Project
+  url: /Project.html
+- title: Reserveren
+  url: /Reserveren.html

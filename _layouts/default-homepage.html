@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}{% link assets/css/app.scss %}">
+</head>
+<body>
+
+    <div class="parallax">
+      <div class="parallax-group">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer fill"></div>
+      </div>
+    <div class="content">
+      <img class="daryl_foto_header" src="assets/images/daryl_foto_header.png">
+      <img class="header_logo_" src="assets/images/header_logo_index.png">
+    </div>
+  </div>
+
+{% include nav.html %}
+
+
+{{ content }}
+
+
+{% include footer.html %}
+{% include scripts-bottom.html %}
+</body>
+</html>

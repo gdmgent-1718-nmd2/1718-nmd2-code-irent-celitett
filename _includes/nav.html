@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-light">
+  <!-- websitelogo -->
+  
+  <!-- hamburger icoon -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a href="/ index.html"><img class="navbar-toggler" class="Logo" src="assets/images/Logo.png"></a>
+
+  <!-- hoofdnavigatie -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+        {% assign links = site.data.navigation %}
+        {% for link in links %}
+            {% assign class = nil %}
+            {% if link.url contains page.url %}
+                {% assign class = ' active' %}
+            {% endif %}
+            {% if link.sublinks %}
+                <li class="nav-item dropdown {{ class }}">
+                    <a href="{{ site.baseurl }}{{ link.url }}" class="nav-link dropdown-toggle {{ class }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ link.title }} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {% for sublink in link.sublinks %}
+                                <li class="dropdown-item">
+                                    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a>
+                                </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li class="nav-item{{ class }}">
+                    <a class="nav-link{{ class }}" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+    </ul>
+  </div>
+
+   <div class="important_buttons">
+        <div class="emergency">
+          <a href="https://metzgeranimal.com/24-hour-emergency-veterinarians/" target="_blank"><img src="assets/images/emergency_foto.png"></a>
+        </div>
+        <div class="quickchat">
+          <a href="https://www.facebook.com/messages/" target="_blank"><img src="assets/images/quickchat.png"></a>
+        </div>
+    </div>
+
+</nav>

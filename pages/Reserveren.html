@@ -1,0 +1,127 @@
+---
+layout   : default-reserveren
+permalink: /Reserveren
+# Custom Page Variables
+# ─────────────────────
+title: Reserveren
+---
+
+<!-- /container1 -->
+<div class="container-fluid reserveren_container-1">
+	<div class="container">
+		<div class="row">
+			<div class="form_reserveren col">
+				<h2 class="reserveren_container1_title">Reserveren</h2>
+				<h3 class="reserveren_container1_subtitle">In enkele stappen</h3>
+			</div class="form_respons">
+				<form id="regForm" class="row" action="/action_page.php">
+					<div class="col">
+						<div class="tab">Info over het baasje
+							<label>fname</label>
+						    <p><input placeholder="Voornaam..." type="text" oninput="this.className = ''" name="fname"></p>
+
+						    <label>lname</label>
+						    <p><input placeholder="Naam..." type="text" oninput="this.className = ''" name="lname"></p>
+						    <div class="row">
+						    	<label>straat</label>
+							    <p class="col"><input placeholder="Straat..." type="text" oninput="this.className = ''" name="straat"></p>
+
+							    <label>huisnummer</label>
+							    <p class="col-3"><input placeholder="Nr..." type="number" oninput="this.className = ''" name="huisnummer"></p>
+							</div>
+							<div class="row">
+								<label>gemeente</label>
+							    <p class="col"><input placeholder="Gemeente..." type="text" oninput="this.className = ''" name="gemeente"></p>
+
+							    <label>postcode</label>
+							    <p class="col-3"><input placeholder="Postcode..." type="number" oninput="this.className = ''" name="postcode"></p>
+
+							    <label>bus</label>
+							    <p class="col-3"><input placeholder="Bus..." type="text" oninput="this.className = ''" name="bus"></p>
+							</div>
+						    <p><input placeholder="E-mail..." type="email" id="exampleInputEmail1"  oninput="this.className = ''" name="lname"></p>
+						</div>
+						<div class="tab">Gegevens over het katje
+							<label>naam kat</label>
+						    <p><input placeholder="Naam kat..." oninput="this.className = ''" name="naam"></p>
+
+						    <label>Leeftijd kat</label>
+						    <p><input placeholder="Leeftijd kat..." oninput="this.className = ''" name="leeftijd"></p>
+
+						    <label>soort kat</label>
+						    <p><select placeholder="Soort kat..." oninput="this.className = ''" name="soort"">
+						    	<option>Soort kat?</option>
+						    	<option>Ik weet het niet</option>
+						    	<option>Britse korthaar</option>
+						    	<option>Mainecoon</option>
+						    	<option>Ragdoll</option>
+						    	<option>Europeese korthaar</option>
+						    </select></p>
+
+						    <label>probleem</label>
+						    <p><select placeholder="Probleem..." oninput="this.className = ''" name="probleem"">
+						    	<option>Soort probleem?</option>
+						    	<option>nvt</option>
+						    	<option>kattenbak probleem</option>
+						    	<option>relatie probleem</option>
+						    	<option>gedrag probleem</option>
+						    	<option>kind op komst</option>
+						    	<option>ander huisdier op komst</option>
+						    </select></p>
+
+						    <label>beschrijving probleem</label>
+						    <p class="col"><textarea placeholder="Beschrijving probleem..." type="text" oninput="this.className = ''" name="beschrijving probleem"></textarea></p>
+						</div>
+						<div class="tab">Kies je start datum
+							<label>dag</label>
+						    <p><input placeholder="dag" oninput="this.className = ''" name="dd"></p>
+
+						    <label>maand</label>
+						    <p><input placeholder="maand" oninput="this.className = ''" name="nn"></p>
+
+						    <label>jaar</label>
+						    <p><input placeholder="jaar" oninput="this.className = ''" name="yyyy"></p>
+						</div>
+						<div class="tab">Betaalmethode
+							<label>Betaalmethode</label>
+						    <p><select placeholder="Betaalmethode" oninput="this.className = ''" name="Betaalmethode"">
+						    	<option>...</option>
+						    	<option>bankcontact</option>
+						    	<option>visa kaart</option>
+						    	<option>overschrijving</option>
+						    	<option>paypal</option>
+						    </select></p>
+						</div>
+						<div style="overflow:auto;">
+						    <div style="float:right;">
+						      <button class="btn btn-light" type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+						      <button class="btn btn-light" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+						    </div>
+						</div>
+
+						  <!-- Circles which indicates the steps of the form: -->
+						  <div style="text-align:center;margin-top:40px;">
+						    <span class="step"></span>
+						    <span class="step"></span>
+						    <span class="step"></span>
+						    <span class="step"></span>
+						  </div>
+					</div>
+
+				  <div class="col-lg">
+				  	<img class="form_foto" alt="Responsive image" src="assets/images/form_foto.png">
+				  </div>
+
+				</form>
+		</div>
+	</div>
+</div>
+<!-- /container1 -->
+
+
+<script src="././assets/js/java_form.js" type="text/javascript"></script>
+<!-- jQuery -->
+<script src="http://thecodeplayer.com/uploads/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<!-- jQuery easing plugin -->
+<script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+<script type="text/javascript" href="././assets/js/java_reserveren.js"></script>

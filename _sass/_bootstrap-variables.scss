@@ -1,15 +1,28 @@
 // Custom Variables
 //
 // Put variables overrides here.
+$navbar-light-color:                #3d2515 !default;
+$navbar-light-hover-color:          #c09047 !default;
+$navbar-light-active-color:         #c09047 !default;
+
+$card-bg:                           transparent !default;
+$card-border-color:                 none !default;
+
 //
 // See _vendor/bootstrap/scss/_variables.scss
 
 //
 // Color system
 //
+$dark-brown: #362f2d;
+$dark-brown-brown: #3d2515;
+$gold-brown: #c09047;
+$beige: #eacfb1;
+$dark-beige: #bb8b5e;
+$light-beige: #eaddcd;
+$red: #ffdddd;
+$white: white;
 
-$indigo:  #6610f2;
-$primary: $indigo;
 
 // Fonts
 //
@@ -18,3 +31,13 @@ $primary: $indigo;
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 
 $font-family-base: Merriweather, serif;
+
+@font-face{
+  font-family: "Champagne";
+  src: url(../../assets/fonts/Champagne&Limousines.ttf);
+}
+
+@font-face{
+  font-family: "Arial";
+  src: url(../../assets/fonts/arial_narrow.ttf);
+}

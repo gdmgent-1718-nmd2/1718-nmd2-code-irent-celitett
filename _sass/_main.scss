@@ -1,3 +1,1118 @@
 @import
   "bootstrap-variables",                  // See _bootstrap-variables.scss
   "../_vendor/bootstrap/scss/bootstrap";  // See _vendor/bootstrap/scss/bootstrap.scss
+
+
+@media (max-width: 766px) {
+  .mhide {
+    display: none;
+  }
+ }
+
+.navbar-nav{
+	justify-content: center;
+}
+
+.navbar {
+	background-color: $white;
+}
+
+.collapse{
+	background-color: $white;
+	position: sticky;
+	position: -webkit-sticky;
+}
+
+.sticky {
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+
+@media (min-width: 800px) {
+  .sticky {
+    height: 50px;
+  }
+ }
+
+.Logo{
+	text-align: center;
+	justify-content: center;
+	width: 130px;
+	height: 55px;
+	margin-top: -28px;
+	margin-bottom: -15px;
+	text-decoration: none;
+	outline: none;
+}
+
+.nav-link{
+	font-family: "Champagne";
+	font-size: 25px;
+	margin-top: 10px;
+	position: relative;
+	color: $dark-brown-brown;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+  .nav-link {
+    font-family: "Champagne";
+	font-size: 25px;
+	margin-bottom: -5px;
+	margin-top: -5px;
+	position: relative;
+	color: $dark-brown-brown;
+	text-align: center;
+  }
+ }
+
+.nav-link:hover{
+	color: $gold-brown;
+}
+
+.nav-link:before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 10px;
+	left: 0;
+	background-color: $dark-brown-brown;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+@media (max-width: 800px) {
+  .nav-link:before {
+    display: none;
+  }
+ }
+
+.nav-link:hover:before{
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+@media (max-width: 800px) {
+  .nav-link:hover:before {
+    display: none;
+  }
+ }
+
+.nav-link:active{
+	color: $gold-brown;
+}
+
+.navbar-default{
+	color: $gold-brown;
+}
+
+.important_buttons{
+	position: absolute;
+	margin-top: 450px;
+	margin-left: -15px;
+}
+
+@media (max-width: 600px) {
+  .important_buttons {
+    margin-top: 350px;
+    transform: scale(0.5);
+    margin-left: -30px;
+  }
+ }
+
+.emergency{
+	margin-bottom: 20px;
+}
+
+.emergency:hover{
+	margin-left: 10px;
+}
+
+.quickchat{
+
+}
+
+.quickchat:hover{
+	margin-left: 10px;
+}
+
+
+
+// ------------------- Home -----------------------------------------------------------------------------------
+
+// ------------------- Parallax --------------------------
+
+
+.layer {
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  width: 100%;
+  z-index: 100;
+  min-height: 500px;
+  top: -480px;
+  left: 0;
+  right: 0;
+  bottom: -2000px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.header_logo_{
+	margin-top: -360px;
+	margin-left: -100px;
+}
+
+@media (max-width: 1200px) {
+  .header_logo_ {
+   margin-top: -80px;
+   margin-bottom: 200px;
+  }
+ }
+
+@media (max-width: 800px) {
+  .header_logo_ {
+   margin-top: -80px;
+   margin-bottom: 200px;
+   height: 300px;
+  }
+ }
+
+@media (max-width: 400px) {
+  .header_logo_ {
+   margin-top: -80px;
+   margin-bottom: 200px;
+   height: 200px;
+   margin-left: -15px;
+  }
+ }
+
+.daryl_foto_header{
+	margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .daryl_foto_header {
+   display: none;
+  }
+ }
+
+.parallax {
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+}
+
+.parallax-group {
+  position: relative;
+  height: 0vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.parallax-group div:nth-child(5) {
+  height: 800px;
+  margin-top: 750px;
+  background-image: url("../../assets/images/Wood_background.png");
+  -webkit-transform: translateZ(-3px) scale(5);
+          transform: translateZ(-3px) scale(5);
+}
+
+@media (max-width: 1000px) {
+  .parallax-group div:nth-child(5) {
+   background-image: url("../../assets/images/Wood_background_2.png");
+  }
+ }
+
+@media (max-width: 400px) {
+  .parallax-group div:nth-child(5) {
+   background-image: url("../../assets/images/Wood_background_3.png");
+  }
+ }
+
+.content {
+  position: relative;
+  background-color: transparent;
+  letter-spacing: 5px;
+  line-height: 40px;
+  z-index: 10;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  margin-top: 300px;
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+}
+
+.headtitle_header{
+	font-family: "Champagne";
+  	color: $dark-brown;
+}
+
+.headsubtitle_header{
+	font-family: "Champagne";
+  	color: $dark-brown;
+}
+
+.fill {
+  height: 80%;
+}
+
+// ------------------- Parallax --------------------------
+
+.container-1{
+	background-color: $beige;
+}
+
+.container-2{
+	background-color: $dark-brown;
+	min-height: 300px;
+}
+
+.container-3{
+	background-color: $gold-brown;
+	min-height: 170px;
+}
+
+.container-4{
+	background-color: $beige;
+	min-height: 400px;
+}
+
+.container-5{
+	background-color: $gold-brown;
+	min-height: 200px;
+}
+
+.hoofdtitel_Home{
+	text-align: center;
+	color: $dark-brown-brown;
+	font-family: "Champagne";
+	font-size: 50px;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.hoofdsubtitel_Home{
+	font-family: "Champagne";
+	font-size: 25px;
+	color: $white;
+	position: absolute;
+	background-color: $gold-brown;
+	border: 3px solid $dark-brown-brown;
+	width: 180px;
+	height: 75px;
+	padding: 4px;
+	margin-top: 280px;
+}
+
+.fotos_Home_container-1{
+	margin-bottom: 80px;
+	margin-left: 50px;
+	padding: 3px;
+}
+
+.container2_second_title{
+	color: $white;
+	font-family: "Champagne";
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 100px;
+	margin-left: 30px;
+}
+
+.tip_1_text{
+	color: $white;
+	font-family: Arial;
+	font-size: 25px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.cat_1_home{
+	position: absolute;
+	mix-blend-mode: multiply;
+	margin-top: 470px;
+	margin-left: 1250px;
+	height: 180px;
+}
+
+@media (max-width: 1200px) {
+  .cat_1_home {
+    display: none;
+  }
+ }
+
+.cat_2_home{
+	position: absolute;
+	mix-blend-mode: multiply;
+	height: 220px;
+	margin-left: 10px;
+	margin-top: 50px;
+}
+
+.best{
+	height: 120px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.container4_title{
+	font-size: 55px;
+	color: $gold-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.container4_subtitle{
+	font-size: 25px;
+	color: $white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.container4_text{
+	font-size: 16px;
+	color: $dark-brown-brown;
+	font-family: "Arial";
+	margin-left: 45px;
+}
+
+.container_4_foto{
+	margin-bottom: 20px;
+	margin-top: 30px;
+}
+
+.item{
+	position: absolute;
+	background-color: $white;
+	border: 2px solid $gold-brown;
+	margin-top: 70px;
+	margin-left: 120px;
+	width: 200px;
+}
+
+.container_5_foto_1_text{
+	font-family: "Arial";
+	font-size: 14px;
+	color: $gold-brown;
+	padding-left: 2px;
+}
+
+.cat{
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.decoration:hover{
+	text-decoration: none;
+}
+
+.mb-3{
+	margin-top: -14px;
+	font-family: "Arial";
+	font-size: 14px;
+	color: $gold-brown;
+	padding-left: 2px;
+}
+
+.container_5_foto_2_text{
+	font-family: "Arial";
+	font-size: 14px;
+	color: $gold-brown;
+	padding-left: 2px;
+}
+
+.container_5_foto_3_text{
+	font-family: "Arial";
+	font-size: 14px;
+	color: $gold-brown;
+	padding-left: 2px;
+}
+
+
+// ------------------- Home -----------------------------------------------------------------------------------
+// ------------------- Info -----------------------------------------------------------------------------------
+
+.info_container1_title{
+	font-size: 55px;
+	color: $gold-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.info_container1_subtitle{
+	font-size: 25px;
+	color: $white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.info_container1_text{
+	font-size: 15px;
+	color: $dark-brown-brown;
+	font-family: "Arial";
+	margin-top: 3px;
+	margin-left: 6px;
+}
+
+.info_container1_text_white{
+	font-size: 15px;
+	color: $white;
+	font-family: "Arial";
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 6px;
+}
+
+@media (max-width: 1200px) {
+  .foto_1_info {
+    display: none;
+  }
+ }
+
+#info_first_button{
+	color: white;
+	font-family: "Champagne";
+	font-size: 25px;
+	background-color: $gold-brown;
+	border-color: $gold-brown;
+	margin-top: 70px;
+	margin-left: -100px;
+	width: 300px;
+}
+
+.info_first_button{
+	position: absolute;
+	margin-left: 480px;
+}
+
+@media (max-width: 1200px) {
+  #info_first_button {
+    display: none;
+  }
+ }
+
+.info_first_circle{
+	margin-top: 20px;
+	margin-bottom: -20px;
+	margin-left: -25px;
+}
+
+.container_info-2{
+	background-color: $dark-beige;
+}
+
+.info_container_2_foto{
+	margin-left: -165px;
+}
+
+.info_container2_title{
+	font-size: 55px;
+	color: $beige;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 50px;
+}
+
+.info_container2_subtitle{
+	font-size: 25px;
+	color: $white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+	margin-bottom: 20px;
+}
+
+.info_second_circle{
+	margin-top: 10px;
+	margin-bottom: -20px;
+	margin-left: -25px;
+}
+
+.info_container2_text{
+	font-size: 18px;
+	color: $white;
+	font-family: "Arial";
+	margin-top: 3px;
+	margin-left: 6px;
+}
+
+.container_info-3{
+	background-color: $dark-brown-brown;
+}
+
+.info_container3_title{
+	font-size: 55px;
+	color: $beige;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.info_container3_text{
+	font-size: 18px;
+	color: $white;
+	font-family: "Arial";
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 20px;
+}
+
+#info_second_button{
+	color: $white;
+	font-family: "Champagne";
+	font-size: 25px;
+	background-color: $gold-brown;
+	border-color: $gold-brown;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	width: 300px;
+}
+
+.kat_info_foto{
+	mix-blend-mode: multiply;
+	height: 200px;
+}
+
+// ------------------- Info -----------------------------------------------------------------------------------
+// ------------------- Tijdlijn -----------------------------------------------------------------------------------
+
+body{
+	background-image: url("../../assets/images/tijdlijn_background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-image: url("../../assets/images/tijdlijn_background_2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+  }
+ }
+
+.tijdlijn_container1_title{
+	text-align: center;
+	font-size: 55px;
+	color: $dark-brown-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: -50px;
+}
+
+.tijdlijn_container1_subtitle{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.card{
+	background-color: none;
+	margin-top: 40px;
+	height: 500px;
+}
+
+
+.card-title{
+	font-size: 25px;
+	color: $dark-brown-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+}
+
+.card-text{
+	font-size: 18px;
+	color: $dark-brown-brown;
+	font-family: "Champagne";
+	margin-top: -15px;
+}
+
+#first_card{
+	margin-top: -300px;
+	margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  #first_card {
+   margin-top: 20px;
+  }
+ }
+
+#last_card{
+	margin-top: 300px;
+	margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  #last_card {
+   margin-top: 20px;
+  }
+ }
+
+#last_card_next{
+	margin-top: 100px;
+	margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  #last_card_next {
+   margin-top: 20px;
+  }
+ }
+
+#height{
+	margin-bottom: 140px;
+}
+
+// ------------------- Tijdlijn -----------------------------------------------------------------------------------
+// ------------------- Tour -----------------------------------------------------------------------------------
+
+.tour_container-1{
+	background-color: $light-beige;
+}
+
+.tour_container1_title{
+	text-align: center;
+	font-size: 55px;
+	color: $gold-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+	margin-left: -50px;
+}
+
+.tour_container1_subtitle{
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.tour_container1_text{
+	color: $dark-brown-brown;
+	text-align: center;
+	font-size: 18px;
+	font-family: "Arial";
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+hr.lijn{
+	border-top: 2px solid $dark-brown-brown;
+}
+
+.tour_titel_land{
+	color: $gold-brown;
+	font-size: 30px;
+	font-family: "Champagne";
+	margin-top: 40px;
+}
+
+.tour_text_land{
+	color: black;
+	font-size: 18px;
+	font-family: "Arial";
+}
+
+#tour_second_button{
+	color: white;
+	font-family: "Champagne";
+	font-size: 25px;
+	background-color: $gold-brown;
+	border-color: $gold-brown;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	width: 300px;
+}
+
+.land_image{
+	margin:auto;
+  	position: center center;
+}
+
+@media (max-width: 766px) {
+  .land_image {
+    width: 350px;
+  }
+ }
+
+.last_foto_land{
+	margin-bottom: 40px;
+}
+
+@media (max-width: 766px) {
+  .last_foto_land {
+    width: 350px;
+  }
+ }
+
+
+// ------------------- Tour -----------------------------------------------------------------------------------
+// ------------------- Project -----------------------------------------------------------------------------------
+
+
+@media (max-width: 1200px) {
+  .project_container_1_foto {
+    display: none;
+  }
+ }
+
+.project_container1_title{
+	font-size: 55px;
+	color: $gold-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.project_container1_subtitle{
+	font-size: 25px;
+	color: white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.project_hoofdtitel{
+	font-size: 25px;
+	color: $dark-brown-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.project_titel{
+	font-size: 25px;
+	color: $gold-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+}
+
+.project_container1_text{
+	font-size: 15px;
+	color: $dark-brown-brown;
+	font-family: "Arial";
+	margin-top: 20px;
+}
+
+.project_container1_text_white{
+	font-size: 15px;
+	color: white;
+	font-family: "Arial";
+	margin-top: 20px;
+}
+
+#project_second_button{
+	color: white;
+	font-family: "Champagne";
+	font-size: 25px;
+	background-color: $gold-brown;
+	border-color: $gold-brown;
+	margin-bottom: 10px;
+	width: 300px;
+}
+
+.project_container_2_foto{
+	margin-left: -165px;
+}
+
+.project_container2_title{
+	font-size: 55px;
+	color: $beige;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.project_container2_subtitle{
+	font-size: 25px;
+	color: white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.project_container2_text{
+	font-size: 18px;
+	color: white;
+	font-family: "Arial";
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.liggende_kat_foto{
+	mix-blend-mode: multiply;
+}
+
+hr.lijn_project{
+	border-top: 2px solid $white;
+}
+
+// ------------------- Project -----------------------------------------------------------------------------------
+// ------------------- Reserveren -----------------------------------------------------------------------------------
+
+.reserveren_container-1{
+	background-color: $gold-brown;
+}
+
+.reserveren_container1_title{
+	font-size: 55px;
+	color: $dark-brown-brown;
+	font-family: "Champagne";
+	font-weight: bold;
+	margin-top: 40px;
+}
+
+.reserveren_container1_subtitle{
+	font-size: 25px;
+	color: white;
+	font-family: "Champagne";
+	margin-left: 45px;
+	margin-top: -20px;
+}
+
+.form_reserveren{
+	height: 150px;
+	width: 400px;
+	margin-bottom: 80px;
+}
+
+#regForm {
+  background-color: $beige;
+  font-family: "Champagne";
+  font-size: 35px;
+  font-weight: bold;
+  padding: 40px;
+  width: 1150px;
+  border: 5px solid $dark-brown;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+  #regForm {
+    transform: scale(0.7);
+    margin-left: -80px;
+    margin-top: -200px;
+  }
+ }
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Arial";
+  border: 1px solid $dark-brown;
+  border-radius: 5px;
+  background-color: $gold-brown;
+}
+
+select{
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Arial";
+  border: 1px solid $dark-brown;
+  border-radius: 5px;
+  background-color: $gold-brown;
+}
+
+textarea{
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Arial";
+  border: 1px solid $dark-brown;
+  border-radius: 5px;
+  background-color: $gold-brown;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: $red;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Champagne";
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+#prevBtn {
+	background-color: $dark-brown;
+	color: $white;
+}
+
+#nextBtn{
+	background-color: $dark-brown;
+    color: $white;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $gold-brown;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: $white;
+}
+
+.form_foto{
+	float: right;
+	margin-left: 20px;
+}
+
+label{
+	display: none;
+}
+
+
+// ------------------- Reserveren -----------------------------------------------------------------------------------
+// ------------------- Footer -----------------------------------------------------------------------------------
+
+.container-footer{
+	background-color: $beige;
+	min-height: 200px;
+}
+
+.footer_link_1{
+	font-family: "Champagne";
+	width: 50px;
+	font-size: 25px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.Home_footer_link{
+	margin-top: 50px;
+}
+
+.footer_link_2{
+	font-family: "Champagne";
+	font-size: 25px;
+	margin-top: 10px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.footer_link_3{
+	font-family: "Champagne";
+	font-size: 25px;
+	margin-top: 10px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.footer_link_4{
+	font-family: "Champagne";
+	font-size: 25px;
+	margin-top: 10px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.tour_footer_link{
+	margin-top: 50px;
+	font-family: "Champagne";
+	font-size: 25px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.footer_link_5{
+	font-family: "Champagne";
+	font-size: 25px;
+	margin-top: 10px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.footer_link_6{
+	font-family: "Champagne";
+	font-size: 25px;
+	margin-top: 10px;
+	position: relative;
+	color: $dark-brown-brown;
+}
+
+.titel_footer{
+	font-family: "Champagne";
+}
+
+.text_footer{
+	font-family: "Champagne";
+}
+
+.foto_paar{
+	width: 200px;
+	margin-top: 30px;
+}
+
+.col2-lg{
+	margin-left: 30px;
+}
+
+.contact{
+	margin-top: 30px;
+}
+
+// ------------------- Footer -----------------------------------------------------------------------------------
+
